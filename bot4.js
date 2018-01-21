@@ -13,10 +13,11 @@ tweetIt();
 
 function tweetIt(){
 
+    //uses random function to make each tweet unique
     var r = Math.floor(Math.random()*100);
 
     var tweet ={
-        status: '#My second practice tweet from node.js using my twitbot with random number ' + r 
+        status: '#My tweet from node.js using my twitbot with random number ' + r;
     }
     
     T.post('statuses/update', tweet, tweeted);
